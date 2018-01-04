@@ -1,0 +1,275 @@
+                                          DAY 1 ASSIGNMENT :
+                                    ----------------------------
+
+
+1) Write a C program to accept two integers and check whether they are equal or not.  
+ Test Data : 15 15 
+ Expected Output :  
+ Number1 and Number2 are equal 
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int a,b;
+
+    printf("Enter the numbers ");
+
+    scanf("%d %d",&a,&b);
+
+    
+    if(a==b)
+    
+    {
+    
+      printf("Entered numbers are equal");
+
+    }
+
+    else
+
+    printf("Entered numbers are not equal");
+
+    
+    return 0;
+
+}
+
+
+**********************************************************************************************
+
+2) Write a C program to check whether a given number is positive or negative.  
+ Test Data : 15  
+ Expected Output : 
+ 15 is a positive number 
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+
+{
+
+    int a;
+
+    printf("Enter the number: ");
+
+    scanf("%d",&a);
+
+      if(a>0)
+
+    {
+
+     printf("Entered numbers is positive");
+
+    }
+
+      else if(a<0)
+
+    {
+
+     printf("Entered numbers is negative");
+
+    }
+
+      else
+
+    printf("Entered numbers is value zero");
+
+}
+
+***********************************************************************************************
+
+3) Write a C program to check whether a triangle is Equilateral, Isosceles or Scalene.  
+ Test Data :  
+ 50 50 60  
+ Expected Output : 
+ This is an isosceles triangle. 
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int a,b,c;
+
+    printf("Enter the sides of triangle: ");
+
+    scanf("%d %d %d",&a,&b,&c);
+
+      if(a==b && b==c)
+
+    {
+     printf("The triangle is equilateral");
+
+    }
+
+      else if(a!=b && b!=c)
+
+    {
+
+     printf("The triangle is scalene");
+
+    }
+
+     else if((a==b || b==c || c==a) && (a!=b || b!=c || c!=a))
+
+    {
+  
+     printf("The triangle is isosceles");
+
+    }
+}
+
+***********************************************************************************************
+
+4) Write a C program to check whether a character is an alphabet, digit or special character.  
+ Test Data :  
+ @ 
+ Expected Output : 
+ This is a special character. 
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    char a;
+
+    printf("Enter the character: ");
+
+    scanf("%c",&a);
+
+      if((a>='a' && a<='z') || (a>='A' && a<='Z'))
+
+    {
+
+     printf("The character is alphabet");
+
+    }
+
+      else if(a>='0' && a<='9')
+
+    {
+     
+      printf("The character is digit");
+
+    }
+
+     else
+ 
+      printf("The character is special character");
+
+
+
+}
+
+***********************************************************************************************
+
+5) Write a program in C to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay to the customer. The charge are as follow : Go to the editor 
+ 
+ 
+ Unit	                         Charge/unit 
+ upto 199	                      @1.20 
+ 200 and above but less than 400	@1.50 
+ 400 and above but less than 600	@1.80 
+ 600 and above	@2.00 
+ If bill exceeds Rs. 400 then a surcharge of 15% will be charged and the minimum bill should be of Rs. 100/- 
+ 
+ 
+ Test Data :  
+ 1001 
+ James  
+ 800  
+ Expected Output : 
+ Customer IDNO :1001  
+ Customer Name :James  
+ unit Consumed :800  
+ Amount Charges @Rs. 2.00 per unit : 1600.00  
+ Surchage Amount : 240.00  
+ Net Amount Paid By the Customer : 1840.00 
+
+
+#include <stdio.h>
+#include <string.h>  
+void main()
+{  
+   int custid, conu;
+   float chg, surchg=0, gramt,netamt;
+   char connm[25];
+
+   printf("Input Customer ID :");
+   scanf("%d",&custid);
+   printf("Input the name of the customer :");
+   scanf("%s",connm);
+   printf("Input the unit consumed by the customer : ");
+   scanf("%d",&conu);
+   if (conu <200 )
+	chg = 1.20;
+   else	if (conu>=200 && conu<400)
+		chg = 1.50;
+	else if (conu>=400 && conu<600)
+			chg = 1.80;
+		else
+			chg = 2.00;
+   gramt = conu*chg;
+   if (gramt>300)
+	surchg = gramt*15/100.0;
+   netamt = gramt+surchg;
+   if (netamt  < 100)
+	netamt =100;
+   printf("\nElectricity Bill\n");
+   printf("Customer IDNO                       :%d\n",custid);
+   printf("Customer Name                       :%s\n",connm);
+   printf("unit Consumed                       :%d\n",conu);
+   printf("Amount Charges @Rs. %4.2f  per unit :%8.2f\n",chg,gramt);
+   printf("Surchage Amount                     :%8.2f\n",surchg);
+   printf("Net Amount Paid By the Customer     :%8.2f\n",netamt);
+
+}  
+ 
+ 
+
+****************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
