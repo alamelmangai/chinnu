@@ -1,0 +1,86 @@
+#include<stdio.h>
+
+ 
+void mul_tab(int num, int limit)
+
+{
+
+      int i;
+
+      for(i = 1; i <= limit; i++)
+
+      {
+
+            printf("%d * %d = %d\n", num, i, (num*i));
+
+      }
+
+}
+
+
+
+void mult(int num, int limit)
+
+{
+ 
+   int a=1;
+    while(a <= limit)
+ 
+     {
+
+            printf("%d * %d = %d\n", num, a, (num*a));
+
+            a++;
+
+      }
+
+}
+
+
+
+void mult_table(int num, int limit)
+
+{
+
+    int b=1, val;
+
+    
+   
+   do {
+
+      val = num * b;
+
+      printf("%d * %d = %d\n", num, b, val);
+
+      b++;
+
+      } 
+      while ( b <= 3 );
+
+      }
+ 
+
+
+int main()
+
+{
+ 
+      int num, limit;
+ 
+      printf("Enter a Number:");
+ 
+      scanf("%d", &num);
+
+      printf("Enter the Limit:");
+ 
+      scanf("%d", &limit);
+
+      mul_tab(num, limit);
+
+      mult(num,limit);
+
+      mult_table(num,limit);
+
+      return 0;
+
+}

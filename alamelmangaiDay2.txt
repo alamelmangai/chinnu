@@ -1,0 +1,179 @@
+1) Display 10 tp 1 numbers
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    int  i;
+
+
+    printf("The number is :\n");
+
+ 
+    for (i = 10; i >= 1; i--)
+
+    {
+        
+      printf("%d ",i);
+    
+    }
+
+}
+
+****************************************************************************************************
+
+2) Display Z to A alphabet
+
+#include <stdio.h>
+
+int main()
+
+{
+
+
+    char i;
+
+    printf("The alphabet is :\n");
+
+
+    for(i = 'z'; i >= 'a'; i--)
+
+       printf("%c ", i);
+
+    
+return 0;
+
+
+}
+
+****************************************************************************************************
+
+3)Math library
+
+floor():
+
+#include <stdio.h>
+
+#include <math.h>
+
+ int main()
+
+{
+
+       float i=5.1, j=4.9, k=-3.2;
+
+       printf("floor of  %f is  %f\n", i, floor(i));
+
+       printf("floor of  %f is  %f\n", j, floor(j));
+
+       printf("floor of  %f is  %f\n", k, floor(k));
+
+       
+
+       return 0;
+
+}
+
+
+ceil():
+
+#include <stdio.h>
+
+#include <math.h>
+
+ int main()
+
+{
+
+       float a=3.8, b=8.2;
+
+       printf("ceil of  %f is  %f\n", a, ceil(a));
+
+       printf("ceil of  %f is  %f\n", b, ceil(b));
+
+       return 0;
+
+}
+
+sqrt():
+
+#include <stdio.h>
+
+#include <math.h>
+      
+ 
+int main()
+
+{
+
+   printf ("sqrt of 9 = %f%", sqrt (9) );
+
+   printf ("sqrt of 32 = %f", sqrt (32) );
+
+   return 0;
+
+}
+
+
+****************************************************************************************************
+
+5)addition of two arrays
+
+#include<stdio.h>
+
+
+int main()
+
+{
+
+ int i,x[3],y[3],z[3];
+
+ 
+ for (i=0;i<3;i++)
+
+   {
+
+   printf("Enter the first array value");
+
+   scanf("%d",&x[i]);
+
+   }
+
+  for (i=0;i<3;i++)
+
+   {
+
+   printf("Enter the second array value");
+
+   scanf("%d",&y[i]);
+
+   }
+
+   printf("the sum of two array is");
+
+   for(i=0;i<3;i++)
+
+     {
+
+       z[i]=x[i]+y[i];
+
+       printf("%d",z[i]);
+
+     }
+
+
+     return 0
+;
+}   
+
+
+
+
+
+
+
+
+
